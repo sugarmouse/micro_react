@@ -1,6 +1,5 @@
 
-
-const microReact = {
+export const microReact = {
   createElement,
   render
 }
@@ -56,14 +55,3 @@ function render(element, container) {
   })
   container.appendChild(dom)
 }
-
-/** @jsx microReact.createElement */
-const element = (
-  <div id="foo">
-    <a>bar</a>
-    <b />
-  </div>
-)
-
-const container = document.getElementById('root')
-microReact.render(element, container)
