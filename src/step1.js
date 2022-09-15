@@ -1,3 +1,7 @@
+/**
+ * replace React.createElement with the function we defined here
+ */
+
 const microReact = {
   createElement
 }
