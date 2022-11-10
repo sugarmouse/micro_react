@@ -44,18 +44,5 @@ function render(element, container) {
     render(childNode, dom)
   })
 
-
   container.appendChild(dom)
 }
-//tell babel to transpile the JSX use the function we define
-/**@jsx microReact.createElement */
-const element = (
-  <div id="foo">
-    <a>bar</a>
-    <b />
-  </div>
-)
-
-
-const container = document.getElementById("root")
-microReact.render(element, container)
